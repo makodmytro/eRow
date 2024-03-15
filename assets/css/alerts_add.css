@@ -1,0 +1,130 @@
+@import 'style.css';
+
+.alerts-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--black);
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+
+.alerts-list {
+    justify-content: center;
+}
+
+.alerts-list-item {
+    min-width: 240px;
+    max-width: 240px;
+    height: 202px;
+    background-color: var(--red);
+    margin-left: 53px;
+    margin-right: 53px;
+    padding: 20px 20px 10px 20px;
+    margin-top: 26px;
+    margin-bottom: 60px;
+}
+
+.alerts-list-item img {
+    width: 44px;
+}
+
+.alerts-list-item-desc {
+    font-size: 18px;
+    color: var(--white);
+}
+
+.alerts-data-mobile {
+    display: none;
+}
+
+.alerts-data {
+    margin-top: 30px;
+}
+
+.alerts-trans {
+    padding: 40px 25px 50px 25px;
+    background-color: var(--light-grey);
+    border: 1px solid var(--gray);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.alerts-trans-body {
+    margin-top: 24px;
+}
+
+.alerts-trans-body > div {
+    width: 30%;
+    padding: 3px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55px;
+}
+
+.alerts-trans-footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alerts-trans-footer button {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    .alerts-trans-body {
+        flex-direction: column;
+    }
+
+    .alerts-trans-body > div {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .alerts-trans-body-select {
+        margin-top: 50px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .alerts-data-mobile {
+        display: inherit;
+    }
+
+    .alerts-data-laptop {
+        display: none;
+    }
+
+    .alerts-list {
+        width: 100%;
+        overflow-x: scroll;
+        justify-content: left;
+    }
+
+    .alerts-list-item {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .alerts-trans-footer {
+        flex-direction: column;
+        padding-top: 68px;
+    }
+
+    .alerts-trans-footer > div {
+        width: 100%;
+    }
+
+    .alerts-trans-footer button {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}

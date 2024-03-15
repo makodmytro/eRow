@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/category.css">
+
+    <title>Category</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex pe-3" href="#">
+                    <img src="./assets/img/logo.png" alt="logo" class="navbar-logo">
+                    <div class="navbar-brand-text">
+                        <h3 class="text-black fw-bold">allemusikinstrumente<span class="text-red">.de</span></h3>
+                        <h6 class="text-black">Tous les produits utilisés</h6>
+                    </div>
+                    <h6 class="mb-0 text-black navbar-brand-text-mobile">Tous les produits utilisés</h6>
+                </a>
+
+                <div class="d-flex navbar-right-content">
+                    <div class="navbar-alert-mobile position-relative">
+                        <img src="./assets/img/icons/bell-black.png" alt="bell-black">
+                        <span class="rounded-circle d-flex justify-content-center align-items-center">6</span>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <div class="w-100 navbar-collapse-content">
+                        <ul class="navbar-nav navbar-collapse-center">
+                            <li class="nav-item navbar-collapse-item">
+                                <a class="nav-link text-red" href="#">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/shield-check.png" alt="shield-check"
+                                            class="nav-item-icon">
+                                        <h5 class="mb-0">Accueil</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar-collapse-center-between">|</li>
+                            <li class="nav-item navbar-collapse-item">
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/user-edit.png" alt="user-edit"
+                                            class="nav-item-icon">
+                                        <h5 class="mb-0">Nous contacter</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar-collapse-center-between">|
+                            </li>
+                            <li class="nav-item navbar-collapse-item">
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/layer.png" alt="layer" class="nav-item-icon">
+                                        <h5 class="mb-0">Parcourir les catégories</h5>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav navbar-collapse-right">
+                            <li class="nav-item navbar-collapse-right-alert">
+                                <a class="nav-link" href="#">
+                                    <div
+                                        class="d-flex justify-content-center align-items-center navbar-collapse-right-alert-content">
+                                        <div class="position-relative">
+                                            <img src="./assets/img/icons/bell-black.png" alt="bell-black">
+                                            <span
+                                                class="rounded-circle d-flex justify-content-center align-items-center">6</span>
+                                        </div>
+                                        <h5 class="mb-0 ps-2">Mes alertes</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item navbar-collapse-right-refresh">
+                                <a class="nav-link" href="#">
+                                    <img src="./assets/img/icons/refresh-ccw-clock.png" alt="refresh-ccw-clock"
+                                        class="nav-item-icon-laptop">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/refresh-ccw-clock-red.png"
+                                            alt="refresh-ccw-clock-red" class="nav-item-icon">
+                                        <h5 class="mb-0 nav-item-mobile-text">Afficher mon historique</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item navbar-collapse-right-user dropdown">
+                                <a class="nav-link dropdown-toogle" href="#" data-bs-toggle="dropdown">
+                                    <img src="./assets/img/icons/user-alt.png" alt="user-alt"
+                                        class="nav-item-icon-laptop">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/user.png" alt="user" class="nav-item-icon">
+                                        <h5 class="mb-0 nav-item-mobile-text">Mon compte</h5>
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <img src="./assets/img/icons/user-plus.png" alt="user-plus">
+                                                <h5 class="mb-0">Créer un compte</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#loginModal">
+                                            <div class="d-flex">
+                                                <img src="./assets/img/icons/login.png" alt="login">
+                                                <h5 class="mb-0">Me connecter</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="loginModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2 class="modal-title fw-bold">Connexion</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="login-email">
+                            <input type="text" placeholder="Renseignez votre email" class="w-100">
+                        </div>
+                        <div class="login-pwd position-relative">
+                            <input type="password" placeholder="Mot de passe" class="w-100">
+                            <img src="./assets/img/icons/eye-slash.png" alt="eye-slash">
+                        </div>
+                        <h5 class="text-red mt-3">Mot de passe oublié</h5>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <button class="btn btn-primary">Me connecter</button>
+                        <hr>
+                        <button class="btn btn-primary bg-white text-black border-secondary">
+                            <img src="./assets/img/icons/google-icon.png" alt="google-icon" class="me-4">
+                            Continuer avec Google
+                        </button>
+                        <button class="btn btn-primary bg-white text-black border-secondary">
+                            <img src="./assets/img/icons/facebook-icon.png" alt="facebook-icon" class="me-4">
+                            Continuer avec Facebook
+                        </button>
+                        <hr>
+                        <button type="button" class="btn btn-primary bg-white text-red border-primary"
+                            data-bs-dismiss="modal">
+                            Créer mon compte
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="section1-container container">
+            <div class="section1-title">Tous matériels d’occasion pour la catégorie <span class="text-red">“Guitares &
+                    basses”</span> - 845 résultats
+            </div>
+            <div class="section1-sub-title">Voici tous les produits actuellement disponibles pour cette catégorie, vous
+                pouvez affinez votre recherche avec les différents critères de sélection. </div>
+
+            <div class="product-container d-flex">
+                <div class="category">
+                    <div class="guitar-basses-mobile" data-bs-toggle="modal" data-bs-target="#categoryModal">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0">Guitares & basses</h5>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <select class="form-select guitar-basses-laptop" disabled>
+                        <option>Guitares & basses</option>
+                    </select>
+                    <div class="electriques-count d-flex justify-content-between mt-3">
+                        <h5 class="mb-0">Guitares Electriques</h5>
+                        <h5 class="mb-0 text-grey">4032</h5>
+                    </div>
+                    <div class="classiques-count d-flex justify-content-between mt-3">
+                        <h5 class="mb-0 text-red">Guitares Classiques</h5>
+                        <h5 class="mb-0 text-red opacity-25" text-grey>2126</h5>
+                    </div>
+                    <div class="acoustiques-count d-flex justify-content-between mt-3">
+                        <h5 class="mb-0">Guitares Acoustiques & Electro-Acoustiques</h5>
+                        <h5 class="mb-0 text-grey">5345</h5>
+                    </div>
+                    <div class="basses-count d-flex justify-content-between mt-3">
+                        <h5 class="mb-0">Basses Electriques</h5>
+                        <h5 class="mb-0 text-grey">49</h5>
+                    </div>
+
+                    <div class="modal fade" id="categoryModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <h5>Sélectionnez une catégorie</h5>
+                                    <div class="category-modal-search">
+                                        <input type="text" placeholder="Renseignez un mot clé">
+                                        <img src="./assets/img/icons/search-alt.png" alt="search-alt">
+                                    </div>
+                                    <select class="form-select guitar-basses-mobile-modal" disabled>
+                                        <option>Guitares & basses</option>
+                                    </select>
+                                    <div class="electriques-count-modal d-flex justify-content-between mt-3">
+                                        <h5 class="mb-0">Guitares Electriques</h5>
+                                        <h5 class="mb-0 text-grey">4032</h5>
+                                    </div>
+                                    <div class="classiques-count-modal d-flex justify-content-between mt-3">
+                                        <h5 class="mb-0 text-red">Guitares Classiques</h5>
+                                        <h5 class="mb-0 text-red opacity-25" text-grey>2126</h5>
+                                    </div>
+                                    <div class="acoustiques-count-modal d-flex justify-content-between mt-3">
+                                        <h5 class="mb-0">Guitares Acoustiques & Electro-Acoustiques</h5>
+                                        <h5 class="mb-0 text-grey">5345</h5>
+                                    </div>
+                                    <div class="basses-count-modal d-flex justify-content-between mt-3">
+                                        <h5 class="mb-0">Basses Electriques</h5>
+                                        <h5 class="mb-0 text-grey">49</h5>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <div class="product-category">
+                        <select class="form-select ms-2 me-2 category-prix" disabled>
+                            <option>Prix</option>
+                        </select>
+                        <select class="form-select ms-2 me-2 category-note" disabled>
+                            <option>Note vendeur</option>
+                        </select>
+                        <select class="form-select ms-2 me-2 category-expedition" disabled>
+                            <option>Expédition</option>
+                        </select>
+                        <select class="form-select ms-2 me-2 category-local" disabled>
+                            <option>Localisation</option>
+                        </select>
+                        <select class="form-select ms-2 me-2 category-trier" disabled>
+                            <option>Trier</option>
+                        </select>
+                        <button class="btn btn-default sliders-btn">
+                            <img src="./assets/img/icons/sliders.png" alt="sliders">
+                        </button>
+                        <button class="btn btn-primary category-btn" onclick="sidebarshow()">
+                            <img src="./assets/img/icons/bell-plus.png" alt="bell-plus">
+                        </button>
+                    </div>
+                    <div class="products">
+                        <div class="product-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img class="card-img-top" src="./assets/img/product/product2.png" alt="product2">
+                            <div class="card-body">
+                                <h5 class="card-title">Guitare ancienne ancienne -Mirecourt- 1830 Guitare Débu...</h5>
+                                <h5 class="card-text pt-2">Reconditionné</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">1 390 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img class="card-img-top" src="./assets/img/product/product3.png" alt="product3">
+                            <div class="card-body">
+                                <h5 class="card-title">Guitare Harley Benton Custom Line, modèle CLA-15MCE</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">750 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img class="card-img-top" src="./assets/img/product/product4.png" alt="product4">
+                            <div class="card-body">
+                                <h5 class="card-title">Guitare de concert classique vintage Yamato Made in...</h5>
+                                <h5 class="card-text pt-2">Reconditionné</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">250 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card mobile-hidden-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card mobile-hidden-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card mobile-hidden-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card mobile-hidden-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card mobile-hidden-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card mobile-hidden-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card mobile-hidden-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card mobile-hidden-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card mobile-hidden-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card mobile-hidden-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card mobile-hidden-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card mobile-hidden-card">
+                            <img class="card-img-top" src="./assets/img/product/product1.png" alt="product1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hopf Bronco Guitare Classique 4/4</h5>
+                                <h5 class="card-text pt-2">Occasion</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 d-flex justify-content-center align-items-center">500 €</h5>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="me-1">
+                                            <img src="./assets/img/icons/address.png" alt="address">
+                                        </div>
+                                        <h5 class="mb-0">Fribourg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="pagination justify-content-center align-items-center mt-3">
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">30</a></li>
+                        <li class="page-item"><a class="page-link" href="#">
+                                <button class="btn btn-primary">Suivant&nbsp;&nbsp;&nbsp;<span
+                                        class="fa fa-angle-right"></span></button>
+                            </a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="product-desc container mt-5">
+            <h5 class="mb-0 mt-3">Déterminez votre budget. Combien êtes-vous prêt à dépenser pour cet instrument ?</h5>
+            <h5 class="mb-0 mt-3">De cette façon, vous pouvez vous concentrer sur les options qui correspondent à votre
+                budget. Choisissez le
+                type d'instrument que vous souhaitez. Voulez-vous un piano acoustique, un piano numérique, un
+                synthétiseur
+                ou un orgue ?</h5>
+            <h5 class="mb-0 mt-3 fw-bold">Chaque instrument a ses avantages et ses inconvénients en termes de son, de
+                sensation, de portabilité, etc.
+            </h5>
+            <h5 class="mb-0 mt-3">Tenez compte de la taille et du poids de l'instrument. Si vous disposez d'un espace
+                limité ou prévoyez de
+                transporter l'instrument régulièrement, vous souhaiterez peut-être quelque chose de plus compact et de
+                plus
+                léger.</h5>
+            <h5 class="mb-0 mt-3 fw-bold    ">Mais si vous envisagez de le conserver au même endroit, ce n’est peut-être
+                pas une considération importante.
+            </h5>
+            <h5 class="mb-0 mt-3">Assurez-vous que l'instrument possède toutes les fonctionnalités dont vous avez
+                besoin. Voulez-vous un
+                clavier avec de nombreuses options sonores, une mémoire intégrée, une connexion à d'autres appareils ?
+            </h5>
+            <h5 class="mb-0 mt-3">Réfléchissez à la manière dont vous souhaitez utiliser l’instrument et à ce qui est
+                important pour vous. Si
+                possible, essayez l'instrument avant de l'acheter. De cette façon, vous pouvez avoir une idée de la
+                sensation de l'instrument, de la qualité de son son et de sa facilité d'utilisation.</h5>
+            <h5 class="mb-0 mt-3">Pensez à l'entretien et à la durabilité de l'instrument. Avez-vous besoin de le faire
+                régler régulièrement ?
+                La construction est-elle stable et résistera-t-elle à une utilisation régulière ?</h5>
+        </div>
+
+        <div class="all-category container">
+            <div class="all-category-header">Toutes les catégories</div>
+            <div class="all-category-body d-flex flex-wrap gap-4">
+                <h5>Autre</h5>
+                <h5>guitares basses</h5>
+                <h5>Guitares semi-acoustiques</h5>
+                <h5>Guitares acoustiques</h5>
+                <h5>guitares électriques</h5>
+                <h5>amplificateur</h5>
+                <h5>kits de guitare</h5>
+                <h5>Guitares classiques</h5>
+                <h5>Guitares de voyage</h5>
+                <h5>Accessoires</h5>
+                <h5>guitares à résonateur</h5>
+                <h5>Guitares Lap</h5>
+                <h5>Guitares Lap Steel</h5>
+                <h5>Guitares de boîte à cigares</h5>
+            </div>
+        </div>
+
+        <div class="category-sidebar">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="sidebarhidden()"></button>
+
+            <div class="category-sidebar-body">
+                <div class="d-flex align-items-center">
+                    <h4 class="mb-0 me-3 fw-bold">Prix</h4>
+                    <div>
+                        <img src="./assets/img/icons/circle-information.png" alt="circle-information">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="bg-light-grey" style="padding: 11px; margin-top: 18px; width: 30%;">
+                        <h6 class="text-black opacity-50">Prix minimum</h6>
+                        <div class="d-flex justify-content-between">
+                            <h4>100</h4>
+                            <h4>€</h4>
+                        </div>
+                    </div>
+
+                    <i class="fa fa-arrow-right"></i>
+
+                    <div class="bg-light-grey" style="padding: 11px; margin-top: 18px; width: 30%;">
+                        <h6 class="text-black opacity-50">Prix minimum</h6>
+                        <div class="d-flex justify-content-between">
+                            <h4>1500</h4>
+                            <h4>€</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h4 class="fw-bold mt-4">État du produit</h4>
+                    <div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something"
+                                style="border: 1px solid red;">
+                            <label class="form-check-label">Neuf</label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="check2" name="option2" value="something"
+                                style="border: 1px solid red;">
+                            <label class="form-check-label">Comme neuf</label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="check3" name="option3" value="something"
+                                style="border: 1px solid red;" checked>
+                            <label class="form-check-label">Occasion</label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="check4" name="option4" value="something"
+                                style="border: 1px solid red;" checked>
+                            <label class="form-check-label">Abimé</label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="check5" name="option5" value="something"
+                                style="border: 1px solid red;">
+                            <label class="form-check-label">Cassé</label>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="d-flex align-items-center mt-5 mb-4">
+                    <h4 class="mb-0 me-3 fw-bold">Note du vendeur</h4>
+                    <div>
+                        <img src="./assets/img/icons/circle-information.png" alt="circle-information">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="d-flex align-items-center mt-3">
+                        <img src="./assets/img/icons/star1.svg" alt="star1">
+                        <h5 class="mb-0 ms-5">1 étoile et plus</h5>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <img src="./assets/img/icons/star2.svg" alt="star2">
+                        <h5 class="mb-0 ms-5">2 étoile et plus</h5>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <img src="./assets/img/icons/star3.svg" alt="star3">
+                        <h5 class="mb-0 ms-5">3 étoile et plus</h5>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <img src="./assets/img/icons/star4.svg" alt="star4">
+                        <h5 class="mb-0 ms-5">4 étoile et plus</h5>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <img src="./assets/img/icons/star5.svg" alt="star5">
+                        <h5 class="mb-0 ms-5">5 étoiles</h5>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <div class="d-flex align-items-center mt-4 mb-3">
+                        <h4 class="mb-0 me-3 fw-bold">Tri</h4>
+                        <div>
+                            <img src="./assets/img/icons/circle-information.png" alt="circle-information">
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"
+                            checked>
+                        <h4>Les plus chers en premier</h4>
+                        <label class="form-check-label" for="radio1"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                        <h4>Les moins chers en premier</h4>
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">
+                        <h4>Les plus récents en premier</h4>
+                        <label class="form-check-label"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">
+                        <h4>Le plus récents en dernier</h4>
+                        <label class="form-check-label"></label>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <div class="d-flex align-items-center mt-5 mb-4">
+                        <h4 class="mb-0 me-3 fw-bold">Expédition</h4>
+                        <div>
+                            <img src="./assets/img/icons/circle-information.png" alt="circle-information">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h5>Expédition disponible</h5>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes">
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <div class="d-flex align-items-center mt-4 mb-4">
+                        <h4 class="mb-0 me-3 fw-bold">Localisation</h4>
+                        <div>
+                            <img src="./assets/img/icons/circle-information.png" alt="circle-information">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h5>Uniquement en Belgique</h5>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                                checked>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="category-sidebar-footer">
+                    <h4 class="text-decoration-underline">Réinitialiser tous les critères</h4>
+                    <div>
+                        <button class="btn btn-primary bg-light-grey text-black">Annuler</button>
+                        <button class="btn btn-primary">Valider</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo pb-3">
+                <div class="d-flex">
+                    <img src="./assets/img/logo.png" alt="logo">
+                    <div class="ps-2">
+                        <h3 class="text-black fw-bold pt-2">allemusikinstrumente<span class="text-red">.de</span></h3>
+                        <h6 class="text-black mb-0">Tous les produits utilisés</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="fw-bold footer-logo-laptop">allemusikinstrumente<span class="text-red">.de_</span></h2>
+                    <h4><span class="text-red pb-4">eRowz :</span> Votre partenaire pour un shopping d'occasion
+                        intelligent et écologique</h4>
+                    <h4 class="pt-4">Suivez-nous !</h4>
+                    <div class="d-flex pb-3">
+                        <img src="./assets/img/icons/facebook.png" alt="facebook" class="pe-3">
+                        <img src="./assets/img/icons/instagram.png" alt="instagram" class="pe-3">
+                        <img src="./assets/img/icons/music.png" alt="music" class="pe-3">
+                        <img src="./assets/img/icons/linkin.png" alt="linkin" class="pe-3">
+                    </div>
+                </div>
+                <div class="col-lg-8 contact-menu">
+                    <div class="row">
+                        <div class="col-lg-4 pb-4">
+                            <h4 class="text-white pb-5">Explorer</h4>
+                            <h4>Plan du site</h4>
+                        </div>
+                        <div class="col-lg-4 pb-4">
+                            <h4 class="text-white pb-5">À propos de nous</h4>
+                            <h4>Équipe</h4>
+                            <h4>Contact</h4>
+                        </div>
+                        <div class="col-lg-4 pb-4">
+                            <h4 class="text-white pb-5">Mentions légales</h4>
+                            <h4>Mentions légales</h4>
+                            <h4>Politique de confidentialité</h4>
+                            <h4>CGUV</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <h4 class="mb-0 ps-3 pe-3">allemusikinstrumente.de</h4>
+                    <span class="fa fa-circle" style="font-size: 8px;"></span>
+                    <h4 class="mb-0 ps-3 pe-3">2023</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function sidebarhidden() {
+            $('.category-sidebar').css('display', 'none');
+        }
+
+        function sidebarshow() {
+            $('.category-sidebar').css('display', 'block');
+        }
+    </script>
+
+</body>
+
+</html>

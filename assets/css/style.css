@@ -1,0 +1,468 @@
+:root {
+    --gray: #CDC9C1;
+    --black: #393836;
+    --red: #E4371E;
+    --white: #FFFFFF;
+    --yellow: #FFBC39;
+    --light-grey: #F3F3F1;
+    --blue: #1878F3;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Waiting for Sunrise;
+    src: url(../fonts/WaitingfortheSunrise-Regular.ttf);
+}
+
+body {
+    font-family: "Poppins";
+}
+
+main {
+    padding-top: 106px;
+}
+
+.text-white {
+    color: var(--white) !important;
+}
+
+.text-black {
+    color: var(--black) !important;
+}
+
+.text-red {
+    color: var(--red) !important;
+}
+
+.text-yellow {
+    color: var(--yellow) !important;
+}
+
+.text-grey {
+    color: var(--gray);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-light-grey {
+    background-color: var(--light-grey) !important;
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-gray {
+    background-color: var(--gray);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.border-primary {
+    border: 1px solid var(--red) !important;
+}
+
+.border-secondary {
+    border: 1px solid var(--blue) !important;
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: var(--red);
+    outline: none;
+    border: none;
+    padding: 18px 20px;
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--black);
+    outline: none;
+    border: none;
+    padding: 18px 20px;
+}
+
+.form-check-input[type = "radio"] {
+    border: 1px solid var(--red);
+}
+
+.form-check-input:checked {
+    background-color: var(--red);
+    border: 1px solid var(--red);
+}
+
+h1 {
+    font-size: 32px !important;
+}
+
+h2 {
+    font-size: 24px !important;
+}
+
+h3 {
+    font-size: 20px !important;
+}
+
+h4 {
+    font-size: 16px !important;
+}
+
+h5 {
+    font-size: 14px !important;
+}
+
+h6 {
+    font-size: 12px !important;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+select,
+select:focus {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none;
+    background-color: var(--light-grey) !important;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--gray);
+    height: 106px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-logo {
+    height: 51px;
+    padding-right: 10px;
+}
+
+.navbar-brand-text h3 {
+    padding-top: 13px;
+    margin-bottom: 0px;
+}
+
+.navbar-brand-text h5 {
+    margin-bottom: 0px;
+}
+
+.navbar-brand-text-mobile {
+    display: none;
+    position: absolute;
+}
+
+.navbar-collapse-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 38px;
+    display: none;
+}
+
+.nav-item-mobile-text {
+    display: none;
+}
+
+.navbar-collapse-center .nav-item {
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.navbar-collapse-center-between,
+.navbar-collapse-right-refresh,
+.navbar-collapse-right-user,
+.navbar-collapse-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-collapse-center .navbar-collapse-center-between {
+    opacity: 0.2;
+}
+
+.navbar-collapse-right .navbar-collapse-right-alert {
+    padding-right: 74px;
+}
+
+.navbar-collapse-right .navbar-collapse-right-alert span {
+    position: absolute;
+    right: -8px;
+    top: -17px;
+    background-color: var(--red);
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--white);
+    width: 24px;
+    height: 24px;
+}
+
+.navbar-collapse-right .navbar-collapse-right-alert .navbar-collapse-right-alert-content {
+    padding: 18px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--Black, #393836);
+}
+
+.navbar-collapse-right .navbar-collapse-right-refresh {
+    padding-right: 32px;
+}
+
+.navbar-collapse-right .navbar-collapse-right-user .dropdown-menu {
+    background: var(--Background, #FDFDFD);
+    box-shadow: 0px 4px 12px 0px rgba(57, 56, 54, 0.60);
+    right: -22px !important;
+    left: auto;
+    padding: 0px 64px 37px 44px;
+}
+
+.navbar-collapse-right .navbar-collapse-right-user .dropdown-item {
+    padding-top: 40px;
+}
+
+.navbar-collapse-right .navbar-collapse-right-user .dropdown-item h5 {
+    padding-left: 38px;
+}
+
+.navbar-alert-mobile {
+    border-radius: 8px;
+    border: 1px solid var(--Black, #393836);
+    padding: 18px 20px;
+    display: none;
+}
+
+.navbar-alert-mobile span {
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    background-color: var(--red);
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--white);
+    width: 24px;
+    height: 24px;
+}
+
+#loginModal .modal-dialog {
+    max-width: 521px;
+}
+
+#loginModal .modal-dialog .modal-content {
+    padding: 40px 80px 60px 80px;
+}
+
+#loginModal .modal-dialog .modal-content .modal-header {
+    border: none;
+}
+
+#loginModal .modal-dialog .modal-content .modal-header button {
+    margin-right: -45px !important;
+}
+
+#loginModal .modal-dialog .modal-content .modal-body {
+    padding-top: 45px !important;
+}
+
+#loginModal .modal-dialog .modal-content .modal-footer {
+    border: none;
+}
+
+#loginModal .modal-dialog .modal-content .modal-footer button {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#loginModal .modal-dialog .modal-content .modal-footer hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: var(--black);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#loginModal .modal-body input,
+#loginModal .modal-body input:focus {
+    height: 50px;
+    border: none;
+    background-color: var(--light-grey);
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 12px;
+    padding-left: 15px;
+    outline: none;
+}
+
+#loginModal .modal-body img {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+@media (max-width: 537px) {
+    #loginModal .modal-dialog {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 106px;
+    }
+    #loginModal .modal-dialog .modal-content {
+        padding: 33px 16px 50px 16px;
+    }
+
+    #loginModal .modal-dialog .modal-content .modal-header button {
+        margin-right: 0px !important;
+    }
+}
+
+@media (max-width: 1400px) {
+    .navbar-collapse-center .nav-item {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar-collapse-right .navbar-collapse-right-alert {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .navbar-collapse-center .nav-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navbar-collapse-right .navbar-collapse-right-alert {
+        padding-right: 25px;
+    }
+
+    .navbar-collapse-right .navbar-collapse-right-refresh {
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar-brand {
+        display: block !important;
+    }
+
+    .navbar-brand-text {
+        display: none;
+    }
+
+    .navbar-brand-text-mobile {
+        display: inherit;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        padding-left: 16px;
+        padding-right: 20px;
+    }
+    .navbar-logo {
+        height: 33px;
+    }
+
+    .navbar-right-content {
+        padding-top: 20px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 110px;
+        left: 0px;
+        background-color: var(--white);
+        width: 100%;
+    }
+
+    .navbar-collapse-content {
+        display: block;
+    }
+
+    .nav-item-icon,
+    .nav-item-mobile-text {
+        display: inherit;
+    }
+
+    .navbar-alert-mobile {
+        display: block;
+        margin-right: 16px;
+        padding: 10px;
+    }
+
+    .navbar-collapse-center .nav-item {
+        padding: 0px;
+    }
+
+    .nav-item-icon {
+        margin-left: 28px;
+    }
+
+    .navbar-collapse-item,
+    .navbar-collapse-right-refresh,
+    .navbar-collapse-right-user {
+        display: block;
+        align-items: left !important;
+    }
+
+    .navbar-collapse-right-alert,
+    .navbar-collapse-center-between {
+        display: none;
+    }
+
+    .navbar-collapse .nav-item {
+        margin-top: 40px;
+    }
+
+    .nav-item-icon-laptop {
+        display: none;
+    }
+    
+    .navbar-collapse-right .navbar-collapse-right-user .dropdown-menu {
+        box-shadow: none;
+        border: none;
+        padding-left: 75px;
+    }
+}
+
+
+
+/* Footer */
+
+footer {
+    padding-top: 38px;
+    padding-bottom: 27px;
+    background-color: #CDC9C1;
+}
+
+footer .footer-logo {
+    display: none !important;
+}
+
+@media (max-width: 991px) {
+    footer .footer-logo {
+        display: block !important;
+    }
+
+    footer .footer-logo-laptop {
+        display: none;
+    }
+}

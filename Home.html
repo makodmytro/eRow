@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex pe-3" href="#">
+                    <img src="./assets/img/logo.png" alt="logo" class="navbar-logo">
+                    <div class="navbar-brand-text">
+                        <h3 class="text-black fw-bold">allemusikinstrumente<span class="text-red">.de</span></h3>
+                        <h6 class="text-black">Tous les produits utilisés</h6>
+                    </div>
+                    <h6 class="mb-0 text-black navbar-brand-text-mobile">Tous les produits utilisés</h6>
+                </a>
+
+                <div class="d-flex navbar-right-content">
+                    <div class="navbar-alert-mobile position-relative">
+                        <img src="./assets/img/icons/bell-black.png" alt="bell-black">
+                        <span class="rounded-circle d-flex justify-content-center align-items-center">6</span>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <div class="w-100 navbar-collapse-content">
+                        <ul class="navbar-nav navbar-collapse-center">
+                            <li class="nav-item navbar-collapse-item">
+                                <a class="nav-link text-red" href="#">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/shield-check.png" alt="shield-check"
+                                            class="nav-item-icon">
+                                        <h5 class="mb-0">Accueil</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar-collapse-center-between">|
+                            </li>
+                            <li class="nav-item navbar-collapse-item">
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/user-edit.png" alt="user-edit"
+                                            class="nav-item-icon">
+                                        <h5 class="mb-0">Nous contacter</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar-collapse-center-between">|
+                            </li>
+                            <li class="nav-item navbar-collapse-item">
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/layer.png" alt="layer" class="nav-item-icon">
+                                        <h5 class="mb-0">Parcourir les catégories</h5>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav navbar-collapse-right">
+                            <li class="nav-item navbar-collapse-right-alert">
+                                <a class="nav-link" href="#">
+                                    <div
+                                        class="d-flex justify-content-center align-items-center navbar-collapse-right-alert-content">
+                                        <div class="position-relative">
+                                            <img src="./assets/img/icons/bell-black.png" alt="bell-black">
+                                            <span
+                                                class="rounded-circle d-flex justify-content-center align-items-center">6</span>
+                                        </div>
+                                        <h5 class="mb-0 ps-2">Mes alertes</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item navbar-collapse-right-refresh">
+                                <a class="nav-link" href="#">
+                                    <img src="./assets/img/icons/refresh-ccw-clock.png" alt="refresh-ccw-clock"
+                                        class="nav-item-icon-laptop">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/refresh-ccw-clock-red.png"
+                                            alt="refresh-ccw-clock-red" class="nav-item-icon">
+                                        <h5 class="mb-0 nav-item-mobile-text">Afficher mon historique</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item navbar-collapse-right-user dropdown">
+                                <a class="nav-link dropdown-toogle" href="#" data-bs-toggle="dropdown">
+                                    <img src="./assets/img/icons/user-alt.png" alt="user-alt"
+                                        class="nav-item-icon-laptop">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/user.png" alt="user" class="nav-item-icon">
+                                        <h5 class="mb-0 nav-item-mobile-text">Mon compte</h5>
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <img src="./assets/img/icons/user-plus.png" alt="user-plus">
+                                                <h5 class="mb-0">Créer un compte</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#loginModal">
+                                            <div class="d-flex">
+                                                <img src="./assets/img/icons/login.png" alt="login">
+                                                <h5 class="mb-0">Me connecter</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="loginModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2 class="modal-title fw-bold">Connexion</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="login-email">
+                            <input type="text" placeholder="Renseignez votre email" class="w-100">
+                        </div>
+                        <div class="login-pwd position-relative">
+                            <input type="password" placeholder="Mot de passe" class="w-100">
+                            <img src="./assets/img/icons/eye-slash.png" alt="eye-slash">
+                        </div>
+                        <h5 class="text-red mt-3">Mot de passe oublié</h5>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <button class="btn btn-primary">Me connecter</button>
+                        <hr>
+                        <button class="btn btn-primary bg-white text-black border-secondary">
+                            <img src="./assets/img/icons/google-icon.png" alt="google-icon" class="me-4">
+                            Continuer avec Google
+                        </button>
+                        <button class="btn btn-primary bg-white text-black border-secondary">
+                            <img src="./assets/img/icons/facebook-icon.png" alt="facebook-icon" class="me-4">
+                            Continuer avec Facebook
+                        </button>
+                        <hr>
+                        <button type="button" class="btn btn-primary bg-white text-red border-primary"
+                            data-bs-dismiss="modal">
+                            Créer mon compte
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="section1-container">
+            <div class="container">
+                <div class="section1-title">Nous trouvons ce que vous recherchez.</div>
+                <h3 class="text-start mx-auto section1-sub-title">Achetez vos produits <span
+                        class="text-yellow">d'occasion</span> pour réduire vos coûts et soutenir votre <span
+                        class="text-yellow">pouvoir d'achat.</span></h3>
+                <div class="section1-search-container mx-auto d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/icons/search-alt.png" alt="search-alt">
+                    <input type="text" class="form-control flex-1" placeholder="Que recherchez vous ?">
+                    <h5 class="mb-0 text-nowrap text-red section1-search-des">Recherche avancée</h5>
+                    <button class="btn btn-primary">Trouver</button>
+                </div>
+
+                <h5 class="mx-auto text-red section1-search-des-mobile">Recherche avancée</h5>
+
+                <div class="d-flex justify-content-center align-items-center section1-options-container mx-auto">
+                    <h5 class="mb-3">Accessoires généraux</h5>
+                    <span class="fa fa-circle ps-3 pe-3 mb-3 text-red" style="font-size: 8px;"></span>
+                    <h5 class="mb-3">instruments à clavier</h5>
+                    <span class="fa fa-circle ps-3 pe-3 mb-3 text-red" style="font-size: 8px;"></span>
+                    <h5 class="mb-3">Équipement audio professionnel</h5>
+                    <span class="fa fa-circle ps-3 pe-3 mb-3 text-red" style="font-size: 8px;"></span>
+                    <h5 class="mb-3">Partitions et recueils de chansons</h5>
+                    <span class="fa fa-circle ps-3 pe-3 mb-3 text-red" style="font-size: 8px;"></span>
+                    <h5 class="mb-3 text-red">Voir toutes les catégories</h5>
+                </div>
+
+                <div class="section1-review text-center mx-auto">
+                    <h4 class="text-black">Avis de nos utilisateurs</h4>
+                    <img src="./assets/img/home/star.png" alt="star" class="mb-2">
+                    <h4 class="text-black">4,7 | 5 345 avis Laissez le votre</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="section2-container container">
+            <div class="section2-card">
+                <img src="./assets/img/home/noun-radio.png" alt="noun-radio">
+                <p class="mb-0">Articles 100% d’occasion</p>
+            </div>
+            <div class="section2-card">
+                <img src="./assets/img/home/certificate-check.png" alt="certificate-check">
+                <p class="mb-0">Certifié eBay & Amazon</p>
+            </div>
+            <div class="section2-card">
+                <img src="./assets/img/home/noun-trust.png" alt="noun-trust">
+                <p class="mb-0">À vos côté depuis 2009</p>
+            </div>
+            <div class="section2-card">
+                <img src="./assets/img/home/Group.png" alt="Group">
+                <p class="mb-0">Made in Belgique</p>
+            </div>
+        </div>
+
+        <div class="section3-container container">
+            <h1 class="text-black fw-bold">Toutes nos catégories de <span class="text-red">matériels d’occasion</span>
+            </h1>
+            <h5 class="text-black opacity-75">Pour une recherche précise, naviguez directement dans les catégories de
+                produits ci-dessous</h5>
+
+            <div class="product-list">
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card1.svg" alt="card1" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card2.svg" alt="card2" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card3.svg" alt="card3" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card4.svg" alt="card4" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card5.svg" alt="card5" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card6.svg" alt="card6" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card7.svg" alt="card7" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card8.svg" alt="card8" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card9.svg" alt="card9" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card10.svg" alt="card10" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card11.svg" alt="card11" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card12.svg" alt="card12" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card13.svg" alt="card13" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card14.svg" alt="card14" class="w-100">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item-inner">
+                        <img src="./assets/img/home/card/card15.svg" alt="card15" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section4-container">
+            <div class="container">
+                <div class="section4-title"><span class="text-red">eRowz</span> : Votre partenaire pour un shopping
+                    d'occasion
+                    intelligent et écologique</div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 d-flex">
+                        <img src="./assets/img/icons/stars.png" alt="stars">
+                        <h5><span class="fw-bold">Dénichez des trésors cachés :</span> Nos algorithmes avancés scrutent
+                            les
+                            plateformes d'occasion en
+                            permanence pour trouver les meilleures offres. Vous n'avez plus à chercher vous-même, <span
+                                class="text-red">eRowz</span> le fait
+                            pour vous.</h5>
+                    </div>
+                    <div class="col-md-6 col-sm-12 d-flex">
+                        <img src="./assets/img/icons/bell.png" alt="bell">
+                        <h5><span class="fw-bold">Recevez des alertes personnalisées :</span> Inscrivez-vous pour
+                            recevoir
+                            des alertes correspondant à vos
+                            préférences. Ne ratez jamais une opportunité, les meilleures offres sont directement livrées
+                            dans
+                            votre boîte de réception.</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 d-flex">
+                        <img src="./assets/img/icons/shield-check.png" alt="shield-check">
+                        <h5><span class="fw-bold">Protégez-vous contre la fraude :</span> Nous avons des accords
+                            privilégiés
+                            avec des plateformes reconnues
+                            comme <span class="text-red">eBay</span> et <span class="text-red">Amazon</span>, pour vous
+                            offrir des produits de confiance.</h5>
+                    </div>
+                    <div class="col-md-6 col-sm-12 d-flex">
+                        <img src="./assets/img/icons/wallet.png" alt="wallet">
+                        <h5><span class="fw-bold">Économisez de l'argent :</span> Découvrez des produits rares et
+                            uniques à
+                            des prix intéressants. Faites des
+                            économies tout en dénichant des objets que vous ne trouverez nulle part ailleurs.</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 d-flex">
+                        <img src="./assets/img/icons/globe-stand.png" alt="globe-stand">
+                        <h5><span class="fw-bold">Faites un geste pour la planète :</span> En choisissant d'acheter
+                            d'occasion, vous contribuez à un mode de
+                            consommation plus durable. Avec <span class="text-red">eRowz</span>, chaque achat est une
+                            action
+                            pour un monde plus respectueux de
+                            l'environnement.</h5>
+                    </div>
+                    <div class="col-md-6 col-sm-12 d-flex">
+                        <img src="./assets/img/icons/desktop-computer.png" alt="desktop-computer">
+                        <h5><span class="fw-bold">Navigation facile et agréable :</span> Notre interface est conçue pour
+                            être facile à utiliser, même sur
+                            mobile. Trouvez ce que vous cherchez en quelques clics et ajustez vos préférences à tout
+                            moment.
+                        </h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 d-flex">
+                        <img src="./assets/img/icons/users.png" alt="users">
+                        <h5><span class="fw-bold">Rejoignez la communauté eRowz :</span> consommez malin, économisez et
+                            participez à la préservation de notre
+                            planète. Ensemble, rendons le shopping d'occasion aussi simple que le shopping neuf.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section5-container">
+            <div class="pt-2">
+                <img src="./assets/img/home/section5.png" alt="section5" class="section5-main-img">
+            </div>
+            <div class="section5-container2">
+                <h1 class="text-white fw-bold">Les alertes</h1>
+                <h2 class="text-white">Abonnez-vous à une <span class="text-yellow">alerte</span> et nous vous
+                    informerons
+                    lorsqu'une nouvelle annonce
+                    commencera à être
+                    diffusée pour votre mot clé.</h2>
+                <h1 class="text-white section5-title2">Préviens-moi lorsque tu as trouvé une guitare électro-acoustique
+                    entre 100 et 150 €</h1>
+                <div class="section5-btn-group">
+                    <button class="btn btn-primary">Définir une nouvelle alerte</button>
+                    <button class="btn btn-secondary">Afficher mes alertes enregistrées</button>
+                </div>
+                <div class="section5-icon-group">
+                    <div class="d-flex">
+                        <img src="./assets/img/icons/medal-alt.png" alt="medal-alt">
+                        <h4 class="mb-0 text-white">Les meilleures offres</h4>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./assets/img/icons/badge-check.png" alt="badge-check">
+                        <h4 class="mb-0 text-white">100% gratuit, sans publicité</h4>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./assets/img/icons/filter-list.png" alt="filter-list">
+                        <h4 class="mb-0 text-white">Filtres avancés</h4>
+                    </div>
+                </div>
+
+                <div class="section5-title3">Les 3 bonnes raisons de souscrire à une alerte</div>
+                <div class="section5-content3">
+                    <div class="d-flex">
+                        <span class="fa fa-circle text-red"
+                            style="font-size: 8px; padding-top: 4px; padding-right: 10px;"></span>
+                        <h5 class="text-white"><span class="text-red fw-bold lh-3">Ne manquez aucune opportunité
+                                :</span>
+                            Avec une alerte eRowz, vous êtes informé en
+                            temps réel des meilleures offres correspondant à vos critères de recherche. Plus besoin de
+                            passer des heures à parcourir différents sites, eRowz le fait pour vous et vous alerte dès
+                            que
+                            l'offre parfaite est disponible.</h5>
+                    </div>
+                    <div class="d-flex">
+                        <span class="fa fa-circle text-red"
+                            style="font-size: 8px; padding-top: 4px; padding-right: 10px;"></span>
+                        <h5 class="text-white"><span class="text-red fw-bold">Trouvez des objets rares et uniques
+                                :</span>
+                            Les objets d'occasion ont leur propre
+                            histoire et peuvent être uniques. Grâce à nos alertes, vous pouvez découvrir des objets
+                            rares
+                            que vous n'auriez peut-être pas trouvés par vous-même.</h5>
+                    </div>
+                    <div class="d-flex">
+                        <span class="fa fa-circle text-red"
+                            style="font-size: 8px; padding-top: 4px; padding-right: 10px;"></span>
+                        <h5 class="text-white"><span class="text-red fw-bold">Faites un geste pour la planète :</span>
+                            En
+                            achetant d'occasion, vous participez à
+                            réduire la production de biens neufs et contribuez ainsi à une consommation plus durable.
+                            Chaque
+                            alerte eRowz est une opportunité de faire un geste pour la planète.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section6-container container">
+            <div class="section6-title">Les filtres des produits</div>
+            <div class="section6-sub-title">eRows, vous permet de définir vos paramètres de recherche grâce à des
+                filtres
+                personnalisés. </div>
+            <div class="section6-content">
+                <div class="card">
+                    <img src="./assets/img/home/timer.png" alt="timer">
+                    <h5 class="text-red fw-bold pt-3 pb-3">Gagnez du temps</h5>
+                    <h5 style="line-height: 1.6;">Filtrer les produits vous permet de cibler rapidement les articles qui
+                        correspondent à vos critères
+                        spécifiques. Cela élimine le besoin de parcourir des pages et des pages de produits qui ne vous
+                        intéressent pas.</h5>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/home/award.png" alt="award">
+                    <h5 class="text-red fw-bold pt-3 pb-3">Trouvez la meilleure offre</h5>
+                    <h5 style="line-height: 1.6;">En utilisant les filtres, vous pouvez organiser les produits par prix,
+                        localisation, et autres
+                        critères pertinents, ce qui vous permet de dénicher la meilleure offre pour votre budget et vos
+                        besoins spécifiques.</h5>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/home/bags-shopping.png" alt="bags-shopping">
+                    <h5 class="text-red fw-bold pt-3 pb-3">Expérience de shopping personnalisée </h5>
+                    <h5 style="line-height: 1.6;">L'application de filtres crée une expérience de shopping sur mesure,
+                        en
+                        affichant uniquement les
+                        produits qui sont pertinents pour vous. Cela vous donne le contrôle et vous aide à trouver plus
+                        facilement ce que vous cherchez.</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="section7-container container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <img src="./assets/img/us.png" alt="us" class="w-100 pt-5 mx-auto">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="section7-title">À propos d’eRows</div>
+                    <h5 class="text-black pb-3">Site-annonce est édité par la société Belge eRowz SA. Nous sélectionnons
+                        avec soin les meilleures bonnes affaires du marché, gratuitement pour vous.</h5>
+                    <div class="d-flex pt-3 pb-3">
+                        <span class="fa fa-circle ps-3 pe-3 mb-3 text-red" style="font-size: 8px;"></span>
+                        <h5>Créé en 2009</h5>
+                    </div>
+                    <div class="d-flex pt-3 pb-3">
+                        <span class="fa fa-circle ps-3 pe-3 mb-3 text-red" style="font-size: 8px;"></span>
+                        <h5>10 employés</h5>
+                    </div>
+                    <div class="d-flex pt-3 pb-3">
+                        <span class="fa fa-circle ps-3 pe-3 mb-3 text-red" style="font-size: 8px;"></span>
+                        <h5>Partenaire certifié eBay et Amazon</h5>
+                    </div>
+                    <div class="d-flex pt-3 pb-3">
+                        <span class="fa fa-circle ps-3 pe-3 mb-3 text-red" style="font-size: 8px;"></span>
+                        <h5>Site Web sécurisé et vérifié par Trustpilot.</h5>
+                    </div>
+                    <div class="d-flex pt-3 pb-3">
+                        <span class="fa fa-circle ps-3 pe-3 mb-3 text-red" style="font-size: 8px;"></span>
+                        <h5>Conformité RGPD</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section8-container">
+            <div class="container">
+                <div class="section8-card-container" style="overflow: hidden;">
+                    <div class="d-flex section8-card-group mb-4" style="transition: all 2s;">
+                        <div class="section8-card">
+                            <div class="section8-card-header">
+                                <div></div>
+                                <div>
+                                    <img src="./assets/img/home/icon1.png" alt="icon1">
+                                </div>
+                            </div>
+                            <div class="section8-card-body">
+                                <h5>
+                                    <span class="fw-bold">
+                                        Créée en 2011 par un ingénieur en informatique et un marketeur
+                                        passionné,
+                                    </span>
+                                    eRowz est née d'un constat simple :
+                                    <br><br>
+                                    le shopping d'occasion peut être une expérience difficile, chronophage et parfois
+                                    décevante.
+                                    <br><br>
+                                    <span class="fw-bold">
+                                        Notre mission est de révolutionner l'achat d'occasion.
+                                    </span>
+                                    Nous voulons rendre cette expérience aussi simple, sécurisée et agréable que l'achat
+                                    de
+                                    produits neufs.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="section8-card">
+                            <div class="section8-card-header">
+                                <div></div>
+                                <div>
+                                    <img src="./assets/img/home/icon2.png" alt="icon2">
+                                </div>
+                            </div>
+                            <div class="section8-card-body">
+                                <h5>
+                                    <span class="fw-bold">
+                                        eRowz est votre partenaire pour un shopping d'occasion intelligent et écologique
+                                    </span>
+                                    <br><br>
+                                    Grâce à nos algorithmes avancés et à nos accords privilégiés avec des plateformes de
+                                    vente en ligne comme
+                                    <br><br>
+                                    <span class="fw-bold">
+                                        eBay
+                                    </span>
+                                    et
+                                    <span class="fw-bold">
+                                        Amazon
+                                    </span>
+                                    nous filtrons en permanence des flux de données énormes pour vous dénicher les
+                                    meilleures offres. Plus besoin de passer des heures à comparer et à rechercher,
+                                    eRowz le
+                                    fait pour vous.
+                            </div>
+                        </div>
+                        <div class="section8-card">
+                            <div class="section8-card-header">
+                                <div></div>
+                                <div>
+                                    <img src="./assets/img/home/icon3.png" alt="icon3">
+                                </div>
+                            </div>
+                            <div class="section8-card-body">
+                                <h5>
+                                    <span class="fw-bold">
+                                        Notre plateforme vous permet de recevoir des alertes personnalisées directement
+                                        sur
+                                        votre mobile,
+                                    </span>
+                                    <br><br>
+                                    correspondant exactement à vos critères de recherche. Vous ne ratez plus aucune
+                                    opportunité et pouvez dénicher des objets rares et uniques sans effort.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="section8-card">
+                            <div class="section8-card-header">
+                                <div></div>
+                                <div>
+                                    <img src="./assets/img/home/icon4.png" alt="icon4">
+                                </div>
+                            </div>
+                            <div class="section8-card-body">
+                                <h5>
+                                    <span class="fw-bold">
+                                        Nous croyons en un monde où le premier réflexe des consommateurs sera d'acheter
+                                        d'occasion.
+                                    </span>
+                                    <br><br>
+                                    Nous sommes convaincus que la technologie peut nous aider à
+                                    <br><br>
+                                    <span class="fw-bold">
+                                        trouver des produits d'occasion aussi facilement que si nous étions sur Amazon.
+                                    </span>
+                                    C'est pourquoi nous travaillons constamment à améliorer notre plateforme pour vous
+                                    offrir une expérience utilisateur agréable et parfaitement adaptée au mobile.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="section8-card">
+                            <div class="section8-card-header">
+                                <div></div>
+                                <div>
+                                    <img src="./assets/img/home/icon1.png" alt="icon1">
+                                </div>
+                            </div>
+                            <div class="section8-card-body">
+                                <h5>
+                                    <span class="fw-bold">
+                                        En choisissant eRowz, vous ne faites pas seulement une bonne affaire, vous
+                                        contribuez aussi à un mode de consommation plus durable.
+                                    </span>
+                                    <br><br>
+                                    Ensemble, faisons de l'achat d'occasion un choix simple, économique et respectueux
+                                    de
+                                    notre planète.
+                                    <br><br>
+                                    Rejoignez la communauté eRowz et
+                                    <span class="fw-bold">
+                                        consommez malin, économisez et participez à la préservation de notre planète.
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-btn d-flex justify-content-between">
+                    <button class="btn btn-primary rounded-circle d-flex justify-content-center align-items-center"
+                        style="width: 43px; height: 43px; background-color: #F8D5D0;">
+                        <i class="fa fa-arrow-left text-black" onclick="nextcard()"></i>
+                    </button>
+                    <div class="d-flex justify-content-between align-items-center card-sel-group" style="width: 79px;">
+                        <div id="card-sel1" class="rounded-circle active"></div>
+                        <div id="card-sel2" class="rounded-circle"></div>
+                        <div id="card-sel3" class="rounded-circle"></div>
+                        <div id="card-sel4" class="rounded-circle"></div>
+                        <div id="card-sel5" class="rounded-circle"></div>
+                    </div>
+                    <button class="btn btn-primary rounded-circle d-flex justify-content-center align-items-center"
+                        style="width: 43px; height: 43px; background-color: #F8D5D0;" onclick="precard()">
+                        <i class="fa fa-arrow-right text-black"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-container container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 pe-5">
+                    <div class="contact-title">Contactez-nous !</div>
+                    <h5>Vous avez des questions, remarques ou commentaires, n'hésitez pas à nous contacter !</h5>
+                    <h6 class="pt-3">Votre prénom et nom *</h6>
+                    <input type="text" placeholder="Jimi Hendrix" class="w-100 bg-light-grey">
+                    <h6 class="pt-3">Votre Email *</h6>
+                    <input type="text" placeholder="jimi.hendrix@gmail.com" class="w-100 bg-light-grey">
+                    <div class="pt-3">
+                        <textarea name="contact" id="contact" cols="30" rows="10" placeholder="votre message *"
+                            class="w-100 bg-light-grey"></textarea>
+                    </div>
+                    <button class="btn btn-primary">Envoyer le message</button>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/contact.png" alt="contact" class="w-100">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <div class="container">
+                <div class="footer-logo pb-3">
+                    <div class="d-flex">
+                        <img src="./assets/img/logo.png" alt="logo">
+                        <div class="ps-2">
+                            <h3 class="text-black fw-bold pt-2">allemusikinstrumente<span class="text-red">.de</span>
+                            </h3>
+                            <h6 class="text-black mb-0">Tous les produits utilisés</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2 class="fw-bold footer-logo-laptop">allemusikinstrumente<span class="text-red">.de_</span>
+                        </h2>
+                        <h4><span class="text-red pb-4">eRowz :</span> Votre partenaire pour un shopping d'occasion
+                            intelligent et écologique</h4>
+                        <h4 class="pt-4">Suivez-nous !</h4>
+                        <div class="d-flex pb-3">
+                            <img src="./assets/img/icons/facebook.png" alt="facebook" class="pe-3">
+                            <img src="./assets/img/icons/instagram.png" alt="instagram" class="pe-3">
+                            <img src="./assets/img/icons/music.png" alt="music" class="pe-3">
+                            <img src="./assets/img/icons/linkin.png" alt="linkin" class="pe-3">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 contact-menu">
+                        <div class="row">
+                            <div class="col-lg-4 pb-4">
+                                <h4 class="text-white pb-5">Explorer</h4>
+                                <h4>Plan du site</h4>
+                            </div>
+                            <div class="col-lg-4 pb-4">
+                                <h4 class="text-white pb-5">À propos de nous</h4>
+                                <h4>Équipe</h4>
+                                <h4>Contact</h4>
+                            </div>
+                            <div class="col-lg-4 pb-4">
+                                <h4 class="text-white pb-5">Mentions légales</h4>
+                                <h4>Mentions légales</h4>
+                                <h4>Politique de confidentialité</h4>
+                                <h4>CGUV</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h4 class="mb-0 ps-3 pe-3">allemusikinstrumente.de</h4>
+                        <span class="fa fa-circle" style="font-size: 8px;"></span>
+                        <h4 class="mb-0 ps-3 pe-3">2023</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('.product-list').slick({
+            infinite: true,
+            arrows: false,
+            rows: 3,
+            slidesToShow: 5,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        rows: 1,
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        rows: 1,
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 550,
+                    settings: {
+                        rows: 1,
+                        slidesToShow: 1,
+                    }
+                },
+            ]
+        });
+
+
+    </script>
+
+    <script>
+        function nextcard() {
+            var activeNo = Number(JSON.stringify($('.card-sel-group .active')[0].id).slice(-2, -1));
+            if (parseInt($('.section8-card-group').css('marginLeft')) < -100) {
+                $('.section8-card-group').css('marginLeft', (parseInt($('.section8-card-group').css('marginLeft')) + 400) + 'px');
+                $('#card-sel' + activeNo).removeClass('active');
+                $('#card-sel' + (activeNo - 1)).addClass('active');
+            }
+        }
+
+        function precard() {
+            var activeNo = Number(JSON.stringify($('.card-sel-group .active')[0].id).slice(-2, -1));
+            if (parseInt($('.section8-card-group').css('marginLeft')) > -1500) {
+                $('.section8-card-group').css('marginLeft', (parseInt($('.section8-card-group').css('marginLeft')) - 400) + 'px');
+                $('#card-sel' + activeNo).removeClass('active');
+                $('#card-sel' + (activeNo + 1)).addClass('active');
+            }
+        }
+    </script>
+</body>
+
+</html>

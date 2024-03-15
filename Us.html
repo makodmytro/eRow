@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/us.css">
+
+    <title>Who we are?</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex pe-3" href="#">
+                    <img src="./assets/img/logo.png" alt="logo" class="navbar-logo">
+                    <div class="navbar-brand-text">
+                        <h3 class="text-black fw-bold">allemusikinstrumente<span class="text-red">.de</span></h3>
+                        <h6 class="text-black">Tous les produits utilisés</h6>
+                    </div>
+                    <h6 class="mb-0 text-black navbar-brand-text-mobile">Tous les produits utilisés</h6>
+                </a>
+
+                <div class="d-flex navbar-right-content">
+                    <div class="navbar-alert-mobile position-relative">
+                        <img src="./assets/img/icons/bell-black.png" alt="bell-black">
+                        <span class="rounded-circle d-flex justify-content-center align-items-center">6</span>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <div class="w-100 navbar-collapse-content">
+                        <ul class="navbar-nav navbar-collapse-center">
+                            <li class="nav-item navbar-collapse-item">
+                                <a class="nav-link text-red" href="#">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/shield-check.png" alt="shield-check"
+                                            class="nav-item-icon">
+                                        <h5 class="mb-0">Accueil</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar-collapse-center-between">|</li>
+                            <li class="nav-item navbar-collapse-item">
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/user-edit.png" alt="user-edit"
+                                            class="nav-item-icon">
+                                        <h5 class="mb-0">Nous contacter</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar-collapse-center-between">|
+                            </li>
+                            <li class="nav-item navbar-collapse-item">
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/layer.png" alt="layer" class="nav-item-icon">
+                                        <h5 class="mb-0">Parcourir les catégories</h5>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav navbar-collapse-right">
+                            <li class="nav-item navbar-collapse-right-alert">
+                                <a class="nav-link" href="#">
+                                    <div
+                                        class="d-flex justify-content-center align-items-center navbar-collapse-right-alert-content">
+                                        <div class="position-relative">
+                                            <img src="./assets/img/icons/bell-black.png" alt="bell-black">
+                                            <span
+                                                class="rounded-circle d-flex justify-content-center align-items-center">6</span>
+                                        </div>
+                                        <h5 class="mb-0 ps-2">Mes alertes</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item navbar-collapse-right-refresh">
+                                <a class="nav-link" href="#">
+                                    <img src="./assets/img/icons/refresh-ccw-clock.png" alt="refresh-ccw-clock"
+                                        class="nav-item-icon-laptop">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/refresh-ccw-clock-red.png"
+                                            alt="refresh-ccw-clock-red" class="nav-item-icon">
+                                        <h5 class="mb-0 nav-item-mobile-text">Afficher mon historique</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item navbar-collapse-right-user dropdown">
+                                <a class="nav-link dropdown-toogle" href="#" data-bs-toggle="dropdown">
+                                    <img src="./assets/img/icons/user-alt.png" alt="user-alt"
+                                        class="nav-item-icon-laptop">
+                                    <div class="d-flex">
+                                        <img src="./assets/img/icons/user.png" alt="user" class="nav-item-icon">
+                                        <h5 class="mb-0 nav-item-mobile-text">Mon compte</h5>
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <img src="./assets/img/icons/user-plus.png" alt="user-plus">
+                                                <h5 class="mb-0">Créer un compte</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#loginModal">
+                                            <div class="d-flex">
+                                                <img src="./assets/img/icons/login.png" alt="login">
+                                                <h5 class="mb-0">Me connecter</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="loginModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2 class="modal-title fw-bold">Connexion</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="login-email">
+                            <input type="text" placeholder="Renseignez votre email" class="w-100">
+                        </div>
+                        <div class="login-pwd position-relative">
+                            <input type="password" placeholder="Mot de passe" class="w-100">
+                            <img src="./assets/img/icons/eye-slash.png" alt="eye-slash">
+                        </div>
+                        <h5 class="text-red mt-3">Mot de passe oublié</h5>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <button class="btn btn-primary">Me connecter</button>
+                        <hr>
+                        <button class="btn btn-primary bg-white text-black border-secondary">
+                            <img src="./assets/img/icons/google-icon.png" alt="google-icon" class="me-4">
+                            Continuer avec Google
+                        </button>
+                        <button class="btn btn-primary bg-white text-black border-secondary">
+                            <img src="./assets/img/icons/facebook-icon.png" alt="facebook-icon" class="me-4">
+                            Continuer avec Facebook
+                        </button>
+                        <hr>
+                        <button type="button" class="btn btn-primary bg-white text-red border-primary"
+                            data-bs-dismiss="modal">
+                            Créer mon compte
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="us-container">
+            <div class="container position-relative">
+                <div class="us">
+                    <div class="us-desc">
+                        <div class="us-title">Qui sommes nous?</div>
+                        <h4 class="text-white">Nous sommes un site-annonce est édité par la société belge eRowz SA. Nous
+                            sélectionnons avec soin les meilleures bonnes affaires du marché, gratuitement pour vous.
+                        </h4>
+                    </div>
+                </div>
+                <div class="us-back1"></div>
+                <img src="./assets/img/Us/_us.png" alt="_us" class="_us-img">
+                <img src="./assets/img/Us/us.png" alt="us" class="us-img">
+            </div>
+            <img src="./assets/img/Us/us-mobile.png" alt="us-mobile" class="us-mobile-img">
+            <div class="us-back2"></div>
+        </div>
+
+        <div class="company">
+            <div class="container">
+                <div class="position-relative">
+                    <div class="company-desc">
+                        <div class="company-title">
+                            <span class="text-red">eRowz</span> est une société belge active dans le secteur de la
+                            seconde-main depuis 2011.
+                        </div>
+                        <h3 class="text-black">
+                            Créée en 2011 par un ingénieur en informatique et un marketeur passionné, eRowz est née d'un
+                            constat
+                            simple : le shopping d'occasion peut être une expérience difficile, chronophage et parfois
+                            décevante.
+                        </h3>
+                    </div>
+                    <img src="./assets/img/Us/address.png" alt="address" class="company-img">
+                </div>
+            </div>
+            <div class="company-back"></div>
+        </div>
+
+        <div class="duty">
+            <div class="container">
+                <div class="position-relative">
+                    <div class="duty-desc">
+                        <div class="duty-title">
+                            Notre mission est de révolutionner l'achat d'occasion.
+                        </div>
+                        <h3 class="text-white">
+                            Nous voulons rendre cette expérience aussi simple, sécurisée et agréable que l'achat de
+                            produits
+                            neufs.
+                        </h3>
+                    </div>
+                    <img src="./assets/img/Us/duty.png" alt="duty" class="duty-img">
+                </div>
+            </div>
+            <div class="duty-back"></div>
+            <img src="./assets/img/Us/duty.png" alt="duty" class="duty-img-mobile">
+        </div>
+
+        <div class="reason-container">
+            <div class="container position-relative">
+                <div class="reason">
+                    <div class="reason-desc">
+                        <div class="reason-title">Nos utilisateurs choisissent des produits d’occasion pour économiser
+                            de l’argent.</div>
+                        <h4 class="text-black">La fonctionnalité d’alerte leur permet de dénicher un produit avant les
+                            autres et donc de
+                            bénéficier du meilleur prix tout en faisant un geste pour la planète.
+                        </h4>
+                    </div>
+                </div>
+                <img src="./assets/img/Us/_reason.png" alt="_reason" class="_reason-img">
+                <img src="./assets/img/Us/reason.png" alt="reason" class="reason-img">
+            </div>
+            <img src="./assets/img/Us/reason.png" alt="reason" class="reason-mobile-img">
+            <div class="reason-back2"></div>
+        </div>
+
+        <div class="gain-container">
+            <div class="container position-relative">
+                <div class="gain">
+                    <div class="gain-desc">
+                        <div class="gain-title">
+                            Nous avons développé un moteur de recherche de produits d’occasion à l'international
+                            (Italie, France, Allemagne, UK, USA).
+                        </div>
+                        <h4 class="text-white">
+                            Avec plus de 100,000 visiteurs par jour sur nos sites, nous souhaitons rendre la
+                            seconde-main accessible à tous, facilement.
+                        </h4>
+                    </div>
+                </div>
+                <img src="./assets/img/Us/_gain.png" alt="_us" class="_gain-img">
+                <img src="./assets/img/Us/gain.png" alt="us" class="gain-img">
+            </div>
+            <img src="./assets/img/Us/gain.png" alt="us-mobile" class="gain-mobile-img">
+            <div class="gain-back2"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo pb-3">
+                <div class="d-flex">
+                    <img src="./assets/img/logo.png" alt="logo">
+                    <div class="ps-2">
+                        <h3 class="text-black fw-bold pt-2">allemusikinstrumente<span class="text-red">.de</span></h3>
+                        <h6 class="text-black mb-0">Tous les produits utilisés</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="fw-bold footer-logo-laptop">allemusikinstrumente<span class="text-red">.de_</span></h2>
+                    <h4><span class="text-red pb-4">eRowz :</span> Votre partenaire pour un shopping d'occasion
+                        intelligent et écologique</h4>
+                    <h4 class="pt-4">Suivez-nous !</h4>
+                    <div class="d-flex pb-3">
+                        <img src="./assets/img/icons/facebook.png" alt="facebook" class="pe-3">
+                        <img src="./assets/img/icons/instagram.png" alt="instagram" class="pe-3">
+                        <img src="./assets/img/icons/music.png" alt="music" class="pe-3">
+                        <img src="./assets/img/icons/linkin.png" alt="linkin" class="pe-3">
+                    </div>
+                </div>
+                <div class="col-lg-8 contact-menu">
+                    <div class="row">
+                        <div class="col-lg-4 pb-4">
+                            <h4 class="text-white pb-5">Explorer</h4>
+                            <h4>Plan du site</h4>
+                        </div>
+                        <div class="col-lg-4 pb-4">
+                            <h4 class="text-white pb-5">À propos de nous</h4>
+                            <h4>Équipe</h4>
+                            <h4>Contact</h4>
+                        </div>
+                        <div class="col-lg-4 pb-4">
+                            <h4 class="text-white pb-5">Mentions légales</h4>
+                            <h4>Mentions légales</h4>
+                            <h4>Politique de confidentialité</h4>
+                            <h4>CGUV</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <h4 class="mb-0 ps-3 pe-3">allemusikinstrumente.de</h4>
+                    <span class="fa fa-circle" style="font-size: 8px;"></span>
+                    <h4 class="mb-0 ps-3 pe-3">2023</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
